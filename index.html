@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="tg.css">
+</head>
+<body>
+    <div id="section 1" class="bgcolor">
+        <div class="d-flex flex-row">
+        <img src="https://th.bing.com/th/id/R.ed74de858e0e8d250f7f73f166c573df?rik=BTsPFiCyZ76bDg&riu=http%3a%2f%2fstatic.concretenetwork.com%2fphoto-gallery%2fimages%2f550x550Exact_0x4%2fsite_26%2fcold-weather-concrete_2919.jpg&ehk=S6RgqN%2bT13qzMyseLIzngNtUFxI8RwBZpVZx%2fzgt5Y8%3d&risl=&pid=ImgRaw&r=0" class="img"/>
+       <div class="d-flex flex-column">
+        <h1 class="text-center head">TEMPERATURE CONVERTER</h1>           
+        <button onclick="display('section 2')" class="btn btn-info but">Start to convert</button>
+        </div>
+        </div>
+    </div>
+    <div id="section 2">
+    <div class="container bgcolor">
+        <h1 >Temperature Converter</h1>
+        <div class="converter">
+            <input type="number" id="inputTemp" placeholder="Enter temperature">
+            <select id="fromUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <span class="arrow">➔</span>
+            <select id="toUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <button id="convertButton">Convert</button>
+        </div>
+        <div class="result" id="result">
+            Converted temperature: <span id="outputTemp"></span>
+        </div>
+        <button class="btn btn-info but" onclick="display('section 1')">Back</button>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
