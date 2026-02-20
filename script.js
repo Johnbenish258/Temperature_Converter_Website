@@ -1,3 +1,10 @@
+function display(sectionId) {
+    document.getElementById("section1").style.display = "none";
+    document.getElementById("section2").style.display = "none";
+
+    document.getElementById(sectionId).style.display = "block";
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const inputTemp = document.getElementById("inputTemp");
     const fromUnit = document.getElementById("fromUnit");
